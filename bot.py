@@ -215,7 +215,7 @@ async def message_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         return
 
     if text.startswith("/setadmin") and ADMIN_ID is None:
-        global ADMIN_ID
+        
         ADMIN_ID = user_id
         await update.message.reply_text(f"✅ আপনি Admin হয়েছেন! ID: {user_id}")
         return
