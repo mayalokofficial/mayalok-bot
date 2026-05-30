@@ -4,8 +4,8 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, filters, ContextTypes
 
 # Config
-TOKEN = "8804554324:AAGnGvkbSIQJxbY0NAHh6JhNxs5Aq1hdDpM"
-ADMIN_ID = None  # পরে বসাবো
+TOKEN = os.environ.get("TOKEN")
+ADMIN_ID = int(os.environ.get("ADMIN_ID", 0)) or None
 
 # Database (simple dict)
 users = {}
