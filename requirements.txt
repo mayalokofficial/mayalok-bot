@@ -1,1 +1,2 @@
-github.com/mayalokofficial/mayalok-bot/edit/main/requirements.txt
+python-telegram-bot==20.7
+httpx==0.27.0
