@@ -5,7 +5,7 @@ from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQu
 
 # Config
 TOKEN = os.environ.get("TOKEN")
-ADMIN_ID = int(os.environ.get("ADMIN_ID", 0)) or None
+github.com/mayalokofficial/mayalok-bot/blob/main/bot.py
 users = {}
 videos = {}
 scripts = {}
